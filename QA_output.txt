@@ -1,0 +1,25 @@
+加载已有 ckpt...
+Loading weights: 100%|█| 284/284 [00:00<00:00, 867.06it/s, Materializing param=shared.weig
+The tied weights mapping and config for this model specifies to tie shared.weight to lm_head.weight, but both are present in the checkpoints, so we will NOT tie them. You should update the config with `tie_word_embeddings=False` to silence this warning
+The tied weights mapping and config for this model specifies to tie shared.weight to encoder.embed_tokens.weight, but both are present in the checkpoints, so we will NOT tie them. You should update the config with `tie_word_embeddings=False` to silence this warning
+The tied weights mapping and config for this model specifies to tie shared.weight to decoder.embed_tokens.weight, but both are present in the checkpoints, so we will NOT tie them. You should update the config with `tie_word_embeddings=False` to silence this warning
+Epoch 0: 100%|████████████████████████████| 1815/1815 [12:20<00:00,  2.45it/s, loss=0.314]
+Epoch 0 Loss: 0.1594920842192513
+Writing model shards: 100%|█████████████████████████████████| 1/1 [00:02<00:00,  2.74s/it]
+Writing model shards: 100%|█████████████████████████████████| 1/1 [00:02<00:00,  2.28s/it]
+保存最佳模型
+Epoch 1: 100%|███████████████████████████| 1815/1815 [12:20<00:00,  2.45it/s, loss=0.0647]
+Epoch 1 Loss: 0.10774433782231832
+Writing model shards: 100%|█████████████████████████████████| 1/1 [00:02<00:00,  2.67s/it]
+Writing model shards: 100%|█████████████████████████████████| 1/1 [00:02<00:00,  2.65s/it]
+保存最佳模型
+Epoch 2: 100%|███████████████████████████| 1815/1815 [12:21<00:00,  2.45it/s, loss=0.0951]
+Epoch 2 Loss: 0.0859441893129063
+Writing model shards: 100%|█████████████████████████████████| 1/1 [00:02<00:00,  2.75s/it]
+Writing model shards: 100%|█████████████████████████████████| 1/1 [00:02<00:00,  2.75s/it]
+保存最佳模型
+Loading weights: 100%|█| 284/284 [00:00<00:00, 1486.55it/s, Materializing param=shared.wei
+The tied weights mapping and config for this model specifies to tie shared.weight to lm_head.weight, but both are present in the checkpoints, so we will NOT tie them. You should update the config with `tie_word_embeddings=False` to silence this warning
+The tied weights mapping and config for this model specifies to tie shared.weight to encoder.embed_tokens.weight, but both are present in the checkpoints, so we will NOT tie them. You should update the config with `tie_word_embeddings=False` to silence this warning
+The tied weights mapping and config for this model specifies to tie shared.weight to decoder.embed_tokens.weight, but both are present in the checkpoints, so we will NOT tie them. You should update the config with `tie_word_embeddings=False` to silence this warning
+预测结果： 一个月
