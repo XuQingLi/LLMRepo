@@ -1,0 +1,9 @@
+pydantic
+python-dotenv
+langchain
+langchain-openai
+langchain-mcp-adapters
+langgraph
+fastmcp
+dashscope
+gradio

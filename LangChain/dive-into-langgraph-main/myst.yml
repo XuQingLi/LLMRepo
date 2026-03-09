@@ -1,0 +1,30 @@
+# See docs at: https://mystmd.org/guide/frontmatter
+version: 1
+project:
+  id: 46b30020-b078-4f68-81fc-430fbf897d0f
+  title: LangGraph 1.0 完全指南
+  description: LangGraph 1.0 教程
+  keywords: [ "LangGraph", "Langchain" ]
+  github: https://github.com/luochang212/dive-into-langgraph
+  toc:
+    - file: book/home.ipynb
+    - file: 1.quickstart.ipynb
+    - file: 2.stategraph.ipynb
+    - file: 3.middleware.ipynb
+    - file: 4.human_in_the_loop.ipynb
+    - file: 5.memory.ipynb
+    - file: 6.context.ipynb
+    - file: 7.mcp_server.ipynb
+    - file: 8.supervisor.ipynb
+    - file: 9.parallelization.ipynb
+    - file: 10.rag.ipynb
+    - file: 11.web_search.ipynb
+    - file: 12.deep_agents.ipynb
+    - file: 13.gradio_app.ipynb
+    - file: 14.langgraph_cli.ipynb
+site:
+  template: book-theme
+  options:
+    logo_text: Dive into LangGraph
+    favicon: ./img/favicon.ico  # 可选，配置浏览器图标
+    # logo: ./img/favicon.png  # 可选，添加自定义logo
