@@ -1,0 +1,1 @@
+目前 fastmcp 还没完全适配 Python 3.14，换 Python 3.10 / 3.11。
