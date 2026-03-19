@@ -23,7 +23,7 @@ llamafactory-cli train \
     --save_steps 500 \
     --plot_loss \
     --overwrite_output_dir \
-    --save_only_model false \
+    --save_only_model false \ 
     --report_to none \
     --per_device_train_batch_size 1 \
     --gradient_accumulation_steps 8 \
