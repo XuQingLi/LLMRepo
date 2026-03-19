@@ -1,0 +1,85 @@
+[INFO|2026-03-19 20:26:01] llamafactory.hparams.parser:406 >> Process rank: 0, world size: 1, device: cuda:0, distributed training: False, compute dtype: torch.bfloat16
+[INFO|2026-03-19 20:26:31] llamafactory.data.loader:143 >> Loading dataset identity.json...
+[INFO|2026-03-19 20:26:32] llamafactory.data.loader:143 >> Loading dataset alpaca_en_demo.json...
+training example:
+input_ids:
+[151644, 872, 198, 6023, 151645, 198, 151644, 77091, 198, 13708, 766, 1339, 522, 26865, 1339, 9707, 0, 358, 1079, 5867, 606, 38154, 458, 15235, 17847, 7881, 553, 5867, 3094, 3417, 13, 2585, 646, 358, 7789, 498, 3351, 30, 151645, 198]
+inputs:
+<|im_start|>user
+hi<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+
+Hello! I am {{name}}, an AI assistant developed by {{author}}. How can I assist you today?<|im_end|>
+
+label_ids:
+[-100, -100, -100, -100, -100, -100, -100, -100, -100, 13708, 766, 1339, 522, 26865, 1339, 9707, 0, 358, 1079, 5867, 606, 38154, 458, 15235, 17847, 7881, 553, 5867, 3094, 3417, 13, 2585, 646, 358, 7789, 498, 3351, 30, 151645, 198]
+labels:
+<think>
+
+</think>
+
+Hello! I am {{name}}, an AI assistant developed by {{author}}. How can I assist you today?<|im_end|>
+
+[INFO|2026-03-19 20:26:39] llamafactory.model.model_utils.kv_cache:143 >> KV cache is disabled during training.
+[INFO|2026-03-19 20:31:42] llamafactory.model.model_utils.checkpointing:143 >> Gradient checkpointing enabled.
+[INFO|2026-03-19 20:31:42] llamafactory.model.model_utils.attention:143 >> Using torch SDPA for faster training and inference.
+[INFO|2026-03-19 20:31:42] llamafactory.model.adapter:143 >> Upcasting trainable params to float32.
+[INFO|2026-03-19 20:31:42] llamafactory.model.adapter:143 >> Fine-tuning method: LoRA
+[INFO|2026-03-19 20:31:42] llamafactory.model.model_utils.misc:143 >> Found linear modules: o_proj,k_proj,v_proj,q_proj,down_proj,up_proj,gate_proj
+[INFO|2026-03-19 20:31:43] llamafactory.model.loader:143 >> trainable params: 9,232,384 || all params: 1,552,946,688 || trainable%: 0.5945
+[WARNING|2026-03-19 20:31:43] llamafactory.train.callbacks:154 >> Previous trainer log in this folder will be deleted.
+{'loss': 1.3533, 'grad_norm': 0.6829813718795776, 'learning_rate': 2.1428571428571428e-05, 'epoch': 0.07}
+{'loss': 1.358, 'grad_norm': 0.6577081084251404, 'learning_rate': 4.523809523809524e-05, 'epoch': 0.15}
+{'loss': 1.2589, 'grad_norm': 0.7410240173339844, 'learning_rate': 6.904761904761905e-05, 'epoch': 0.22}
+{'loss': 1.2171, 'grad_norm': 0.681098461151123, 'learning_rate': 9.285714285714286e-05, 'epoch': 0.29}
+{'loss': 1.2034, 'grad_norm': 0.4556218385696411, 'learning_rate': 9.991123238414455e-05, 'epoch': 0.37}
+{'loss': 1.0838, 'grad_norm': 0.4556580185890198, 'learning_rate': 9.947721081499068e-05, 'epoch': 0.44}
+{'loss': 1.0914, 'grad_norm': 0.5685468316078186, 'learning_rate': 9.868477119388896e-05, 'epoch': 0.51}
+{'loss': 1.0247, 'grad_norm': 0.4416084289550781, 'learning_rate': 9.753965403572703e-05, 'epoch': 0.59}
+{'loss': 1.1405, 'grad_norm': 0.5095136165618896, 'learning_rate': 9.605015468808651e-05, 'epoch': 0.66}
+{'loss': 1.0269, 'grad_norm': 0.6335967183113098, 'learning_rate': 9.422706323888397e-05, 'epoch': 0.73}
+{'loss': 1.1445, 'grad_norm': 0.43034109473228455, 'learning_rate': 9.208358635185373e-05, 'epoch': 0.81}
+{'loss': 1.0725, 'grad_norm': 0.5455791354179382, 'learning_rate': 8.963525159610465e-05, 'epoch': 0.88}
+{'loss': 1.1052, 'grad_norm': 0.46248242259025574, 'learning_rate': 8.689979496279746e-05, 'epoch': 0.95}
+{'loss': 1.014, 'grad_norm': 0.3687096834182739, 'learning_rate': 8.389703238378339e-05, 'epoch': 1.02}
+{'loss': 1.0575, 'grad_norm': 0.4632836580276489, 'learning_rate': 8.064871618293646e-05, 'epoch': 1.1}
+{'loss': 1.0897, 'grad_norm': 1.024731993675232, 'learning_rate': 7.717837750006106e-05, 'epoch': 1.17}
+{'loss': 1.0704, 'grad_norm': 0.336767315864563, 'learning_rate': 7.351115582887211e-05, 'epoch': 1.24}
+{'loss': 1.0234, 'grad_norm': 0.5071958303451538, 'learning_rate': 6.967361690389258e-05, 'epoch': 1.32}
+{'loss': 0.9933, 'grad_norm': 0.477149099111557, 'learning_rate': 6.569356025551454e-05, 'epoch': 1.39}
+{'loss': 1.0103, 'grad_norm': 0.7896565794944763, 'learning_rate': 6.159981782731474e-05, 'epoch': 1.46}
+{'loss': 0.964, 'grad_norm': 0.7302435040473938, 'learning_rate': 5.742204511446203e-05, 'epoch': 1.54}
+{'loss': 0.9511, 'grad_norm': 0.6738896369934082, 'learning_rate': 5.319050633623142e-05, 'epoch': 1.61}
+{'loss': 1.0917, 'grad_norm': 0.546371579170227, 'learning_rate': 4.893585519885764e-05, 'epoch': 1.68}
+{'loss': 1.1331, 'grad_norm': 0.4956528842449188, 'learning_rate': 4.468891283690454e-05, 'epoch': 1.76}
+{'loss': 1.0062, 'grad_norm': 0.7473159432411194, 'learning_rate': 4.0480444541766576e-05, 'epoch': 1.83}
+{'loss': 0.9826, 'grad_norm': 0.9016691446304321, 'learning_rate': 3.634093689470371e-05, 'epoch': 1.9}
+{'loss': 1.0257, 'grad_norm': 0.7454663515090942, 'learning_rate': 3.2300376918881624e-05, 'epoch': 1.98}
+{'loss': 1.1167, 'grad_norm': 0.5979185104370117, 'learning_rate': 2.8388034850262646e-05, 'epoch': 2.04}
+{'loss': 1.0201, 'grad_norm': 0.7870868444442749, 'learning_rate': 2.4632252100977566e-05, 'epoch': 2.12}
+{'loss': 0.9227, 'grad_norm': 0.5535814166069031, 'learning_rate': 2.106023595119358e-05, 'epoch': 2.19}
+{'loss': 0.9917, 'grad_norm': 0.6366878747940063, 'learning_rate': 1.7697862456752273e-05, 'epoch': 2.26}
+{'loss': 0.9465, 'grad_norm': 0.4986896216869354, 'learning_rate': 1.4569489000334436e-05, 'epoch': 2.34}
+{'loss': 0.9184, 'grad_norm': 0.899574339389801, 'learning_rate': 1.1697777844051105e-05, 'epoch': 2.41}
+{'loss': 0.9692, 'grad_norm': 0.6620571613311768, 'learning_rate': 9.103531961664118e-06, 'epoch': 2.48}
+{'loss': 1.0394, 'grad_norm': 0.6951836943626404, 'learning_rate': 6.8055443396842945e-06, 'epoch': 2.56}
+{'loss': 0.9045, 'grad_norm': 0.9493843913078308, 'learning_rate': 4.820461839026047e-06, 'epoch': 2.63}
+{'loss': 0.9875, 'grad_norm': 0.7791574597358704, 'learning_rate': 3.162664603418608e-06, 'epoch': 2.7}
+{'loss': 0.9592, 'grad_norm': 0.785175621509552, 'learning_rate': 1.8441618881519184e-06, 'epoch': 2.78}
+{'loss': 0.9449, 'grad_norm': 0.7342059016227722, 'learning_rate': 8.745050637844532e-07, 'epoch': 2.85}
+{'loss': 0.9562, 'grad_norm': 0.5632125735282898, 'learning_rate': 2.6071842502326527e-07, 'epoch': 2.92}
+{'loss': 0.9436, 'grad_norm': 0.9241654276847839, 'learning_rate': 7.248306003865279e-09, 'epoch': 3.0}
+{'train_runtime': 919.1591, 'train_samples_per_second': 3.558, 'train_steps_per_second': 0.447, 'train_loss': 1.0494230557097135, 'epoch': 3.0}
+***** train metrics *****
+  epoch                    =        3.0
+  total_flos               =  4145664GF
+  train_loss               =     1.0494
+  train_runtime            = 0:15:19.15
+  train_samples_per_second =      3.558
+  train_steps_per_second   =      0.447
+Figure saved at: saves/qwen3-4b/lora/sft/training_loss.png
+[WARNING|2026-03-19 20:47:05] llamafactory.extras.ploting:148 >> No metric eval_loss to plot.
+[WARNING|2026-03-19 20:47:05] llamafactory.extras.ploting:148 >> No metric eval_accuracy to plot.
